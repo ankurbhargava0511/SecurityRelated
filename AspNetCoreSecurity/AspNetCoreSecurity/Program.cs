@@ -11,11 +11,12 @@ builder.Services.AddAuthentication(defaultScheme: "cookie")
         o.LoginPath = "/account/login";
         o.AccessDeniedPath = "/account/accessDenied";
     })
+    .AddCookie("temp")
     .AddGoogle("Google", o =>{
         o.ClientId = "";
         o.ClientSecret = "";
         //o.CallbackPath = "/signin-google";
-        //o.SignInScheme = "cookie";
+        o.SignInScheme = "temp";
 
 
         // mapp external user to your internal users

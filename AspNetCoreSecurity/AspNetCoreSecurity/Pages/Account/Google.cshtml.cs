@@ -15,7 +15,12 @@ namespace AspNetCoreSecurity.Pages.Account
                 // throw
             }
             var props = new 
-                AuthenticationProperties { RedirectUri = ReturnUrl };
+                AuthenticationProperties { 
+                
+                //RedirectUri = ReturnUrl
+                RedirectUri = Url.Page("Callback"),
+                Items= { {"uru", ReturnUrl} }
+            };
 
             return Challenge(props ,"Google");
         }
