@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "92d38MKxDjAMG0SnwzG2CQNTGH5yTnnDFChAKdsvqhvv802N/evG6irGA8cBMIbkRLloDJppF3JlzyrF1fg26A==",
+  "success": true,
+  "projectFilePath": "D:\\Development\\SecurityRelated\\AspNetCoreSecurity\\AspNetCoreSecurity\\AspNetCoreSecurity.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ankur\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\7.0.14\\microsoft.aspnetcore.authentication.google.7.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
