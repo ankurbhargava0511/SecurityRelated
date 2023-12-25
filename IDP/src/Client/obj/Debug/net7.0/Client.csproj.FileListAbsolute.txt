@@ -1,0 +1,17 @@
+D:\Development\SecurityRelated\IDP\src\Client\bin\Debug\net7.0\Client.exe
+D:\Development\SecurityRelated\IDP\src\Client\bin\Debug\net7.0\Client.deps.json
+D:\Development\SecurityRelated\IDP\src\Client\bin\Debug\net7.0\Client.runtimeconfig.json
+D:\Development\SecurityRelated\IDP\src\Client\bin\Debug\net7.0\Client.dll
+D:\Development\SecurityRelated\IDP\src\Client\bin\Debug\net7.0\Client.pdb
+D:\Development\SecurityRelated\IDP\src\Client\bin\Debug\net7.0\IdentityModel.dll
+D:\Development\SecurityRelated\IDP\src\Client\obj\Debug\net7.0\Client.csproj.AssemblyReference.cache
+D:\Development\SecurityRelated\IDP\src\Client\obj\Debug\net7.0\Client.GeneratedMSBuildEditorConfig.editorconfig
+D:\Development\SecurityRelated\IDP\src\Client\obj\Debug\net7.0\Client.AssemblyInfoInputs.cache
+D:\Development\SecurityRelated\IDP\src\Client\obj\Debug\net7.0\Client.AssemblyInfo.cs
+D:\Development\SecurityRelated\IDP\src\Client\obj\Debug\net7.0\Client.csproj.CoreCompileInputs.cache
+D:\Development\SecurityRelated\IDP\src\Client\obj\Debug\net7.0\Client.csproj.CopyComplete
+D:\Development\SecurityRelated\IDP\src\Client\obj\Debug\net7.0\Client.dll
+D:\Development\SecurityRelated\IDP\src\Client\obj\Debug\net7.0\refint\Client.dll
+D:\Development\SecurityRelated\IDP\src\Client\obj\Debug\net7.0\Client.pdb
+D:\Development\SecurityRelated\IDP\src\Client\obj\Debug\net7.0\Client.genruntimeconfig.cache
+D:\Development\SecurityRelated\IDP\src\Client\obj\Debug\net7.0\ref\Client.dll

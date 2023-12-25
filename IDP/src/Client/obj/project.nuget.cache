@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "imisv9nIuiiMHyGzLpqsBs//5rXsnNkib4RW7RI+wxaZjYM7+YJJKmk2/CaemRC4LellhgxlI8IShssYu14yqw==",
+  "success": true,
+  "projectFilePath": "D:\\Development\\SecurityRelated\\IDP\\src\\Client\\Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ankur\\.nuget\\packages\\identitymodel\\6.2.0\\identitymodel.6.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
