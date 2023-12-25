@@ -16,6 +16,18 @@ builder.Services.AddAuthentication(defaultScheme: "cookie")
         o.ClientSecret = "";
         //o.CallbackPath = "/signin-google";
         //o.SignInScheme = "cookie";
+
+
+        // mapp external user to your internal users
+
+        //o.Events = new Microsoft.AspNetCore.Authentication.OAuth.OAuthEvents()
+        //{
+        //    OnCreatingTicket = e =>
+        //    {
+        //        e.Principal
+        //    };
+        //};
+
     });
 
 builder.Services.AddAuthorization(option =>
