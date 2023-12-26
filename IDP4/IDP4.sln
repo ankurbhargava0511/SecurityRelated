@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "src\Api\Api.csproj",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "src\Client\Client.csproj", "{A8307EEA-E920-4DBD-B64E-31109F02786D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcClient", "src\MvcClient\MvcClient.csproj", "{8C8F2841-018B-498B-A2FC-51496DDCCC6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcClient", "src\MvcClient\MvcClient.csproj", "{8C8F2841-018B-498B-A2FC-51496DDCCC6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavascriptClient", "src\JavascriptClient\JavascriptClient.csproj", "{E036FB25-1330-4E48-AF7C-1D7EE96F00A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{8C8F2841-018B-498B-A2FC-51496DDCCC6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C8F2841-018B-498B-A2FC-51496DDCCC6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C8F2841-018B-498B-A2FC-51496DDCCC6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E036FB25-1330-4E48-AF7C-1D7EE96F00A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E036FB25-1330-4E48-AF7C-1D7EE96F00A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E036FB25-1330-4E48-AF7C-1D7EE96F00A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E036FB25-1330-4E48-AF7C-1D7EE96F00A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{8B3F6494-C599-4939-9C46-C97D7D222802} = {D0285240-F896-4CDF-9692-07CD1EEDFECE}
 		{A8307EEA-E920-4DBD-B64E-31109F02786D} = {D0285240-F896-4CDF-9692-07CD1EEDFECE}
 		{8C8F2841-018B-498B-A2FC-51496DDCCC6E} = {D0285240-F896-4CDF-9692-07CD1EEDFECE}
+		{E036FB25-1330-4E48-AF7C-1D7EE96F00A7} = {D0285240-F896-4CDF-9692-07CD1EEDFECE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CA95B64D-7264-4BFB-BD3D-E4940BE29CD1}

@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Development\\SecurityRelated\\IDP\\src\\JavaScriptClient\\wwwroot\\app.js",
+      "PackagePath": "staticwebassets\\app.js"
+    },
+    {
+      "Id": "D:\\Development\\SecurityRelated\\IDP\\src\\JavaScriptClient\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.JavaScriptClient.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.JavaScriptClient.props",
+      "PackagePath": "build\\JavaScriptClient.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.JavaScriptClient.props",
+      "PackagePath": "buildMultiTargeting\\JavaScriptClient.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.JavaScriptClient.props",
+      "PackagePath": "buildTransitive\\JavaScriptClient.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

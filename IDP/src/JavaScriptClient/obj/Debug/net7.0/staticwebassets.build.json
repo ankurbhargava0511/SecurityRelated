@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "22Hj6Tn7mrm6EyjW0Su/yfNa7sZ/h8vNnNUyXjeG5tc=",
+  "Source": "JavaScriptClient",
+  "BasePath": "_content/JavaScriptClient",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "JavaScriptClient\\wwwroot",
+      "Source": "JavaScriptClient",
+      "ContentRoot": "D:\\Development\\SecurityRelated\\IDP\\src\\JavaScriptClient\\wwwroot\\",
+      "BasePath": "_content/JavaScriptClient",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Development\\SecurityRelated\\IDP\\src\\JavaScriptClient\\wwwroot\\app.js",
+      "SourceId": "JavaScriptClient",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Development\\SecurityRelated\\IDP\\src\\JavaScriptClient\\wwwroot\\",
+      "BasePath": "_content/JavaScriptClient",
+      "RelativePath": "app.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\app.js"
+    },
+    {
+      "Identity": "D:\\Development\\SecurityRelated\\IDP\\src\\JavaScriptClient\\wwwroot\\index.html",
+      "SourceId": "JavaScriptClient",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Development\\SecurityRelated\\IDP\\src\\JavaScriptClient\\wwwroot\\",
+      "BasePath": "_content/JavaScriptClient",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}
