@@ -48,3 +48,4 @@ D:\Development\SecurityRelated\IDP\src\IdentityServer\obj\Debug\net7.0\ref\Ident
 D:\Development\SecurityRelated\IDP\src\IdentityServer\bin\Debug\net7.0\IdentityServer.staticwebassets.runtime.json
 D:\Development\SecurityRelated\IDP\src\IdentityServer\obj\Debug\net7.0\IdentityServer.RazorAssemblyInfo.cache
 D:\Development\SecurityRelated\IDP\src\IdentityServer\obj\Debug\net7.0\IdentityServer.RazorAssemblyInfo.cs
+D:\Development\SecurityRelated\IDP\src\IdentityServer\bin\Debug\net7.0\TwoStepsAuthenticator.dll

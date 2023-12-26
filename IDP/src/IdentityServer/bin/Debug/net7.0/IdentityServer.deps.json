@@ -9,7 +9,8 @@
       "IdentityServer/1.0.0": {
         "dependencies": {
           "Duende.IdentityServer": "6.3.2",
-          "Serilog.AspNetCore": "6.0.0"
+          "Serilog.AspNetCore": "6.0.0",
+          "TwoStepsAuthenticator": "1.4.1"
         },
         "runtime": {
           "IdentityServer.dll": {}
@@ -309,7 +310,15 @@
         }
       },
       "System.Security.Cryptography.Cng/4.5.0": {},
-      "System.Text.Json/4.6.0": {}
+      "System.Text.Json/4.6.0": {},
+      "TwoStepsAuthenticator/1.4.1": {
+        "runtime": {
+          "lib/netstandard2.0/TwoStepsAuthenticator.dll": {
+            "assemblyVersion": "1.4.1.0",
+            "fileVersion": "1.4.1.0"
+          }
+        }
+      }
     }
   },
   "libraries": {
@@ -569,6 +578,13 @@
       "sha512": "sha512-4F8Xe+JIkVoDJ8hDAZ7HqLkjctN/6WItJIzQaifBwClC7wmoLSda/Sv2i6i1kycqDb3hWF4JCVbpAweyOKHEUA==",
       "path": "system.text.json/4.6.0",
       "hashPath": "system.text.json.4.6.0.nupkg.sha512"
+    },
+    "TwoStepsAuthenticator/1.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bkDEFWLibbJ5b0b7zgr3Uc1brYa5hFunZ36WmG+yvfwMCgu978NqEPVu1P120Qbrt65TYEcimsxTzICe6XfAig==",
+      "path": "twostepsauthenticator/1.4.1",
+      "hashPath": "twostepsauthenticator.1.4.1.nupkg.sha512"
     }
   }
 }

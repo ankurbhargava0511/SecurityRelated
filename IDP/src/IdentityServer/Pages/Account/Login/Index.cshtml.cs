@@ -93,6 +93,32 @@ public class Index : PageModel
             if (_users.ValidateCredentials(Input.Username, Input.Password))
             {
                 var user = _users.FindByUsername(Input.Username);
+
+                // validate the second factor 
+                // first, get the totp secret for this user 
+                string userSecret =  "BVRVQJIUGTGNZVKO";
+                if (userSecret == null)
+                {
+                    ModelState.AddModelError("usersecret",
+                        "No second factor secret has been registered - " +
+                        "please contact the helpdesk.");
+                    await BuildModelAsync(Input.ReturnUrl);
+                    return Page();
+                }
+
+                // validate the inputted totp 
+                var authenticator = new TwoStepsAuthenticator
+                    .TimeAuthenticator();
+                if (!authenticator.CheckCode(userSecret,
+                    Input.Totp, user))
+                {
+                    ModelState.AddModelError("totp", "TOTP is invalid.");
+                    await BuildModelAsync(Input.ReturnUrl);
+                    return Page();
+                }
+
+
+
                 await _events.RaiseAsync(new UserLoginSuccessEvent(user.Username, user.SubjectId, user.Username, clientId: context?.Client.ClientId));
 
                 // only set explicit expiration here if user chooses "remember me". 

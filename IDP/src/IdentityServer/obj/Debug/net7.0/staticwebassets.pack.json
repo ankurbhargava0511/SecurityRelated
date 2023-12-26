@@ -21,6 +21,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Development\\SecurityRelated\\IDP\\src\\IdentityServer\\wwwroot\\js\\qrcode.min.js",
+      "PackagePath": "staticwebassets\\js\\qrcode.min.js"
+    },
+    {
+      "Id": "D:\\Development\\SecurityRelated\\IDP\\src\\IdentityServer\\wwwroot\\js\\qrcodehelper.js",
+      "PackagePath": "staticwebassets\\js\\qrcodehelper.js"
+    },
+    {
       "Id": "D:\\Development\\SecurityRelated\\IDP\\src\\IdentityServer\\wwwroot\\js\\signin-redirect.js",
       "PackagePath": "staticwebassets\\js\\signin-redirect.js"
     },

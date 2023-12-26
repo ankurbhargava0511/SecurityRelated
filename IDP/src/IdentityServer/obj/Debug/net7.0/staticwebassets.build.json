@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hD7rSWw06GtMnniAxauPyLCn8lTMVeoIZ9ItuV/TPVY=",
+  "Hash": "8txXfp/ZbE1+/ZM68C1hd/vcnoi8qOdinrobVE3m/SQ=",
   "Source": "IdentityServer",
   "BasePath": "_content/IdentityServer",
   "Mode": "Default",
@@ -100,6 +100,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Development\\SecurityRelated\\IDP\\src\\IdentityServer\\wwwroot\\js\\qrcode.min.js",
+      "SourceId": "IdentityServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Development\\SecurityRelated\\IDP\\src\\IdentityServer\\wwwroot\\",
+      "BasePath": "_content/IdentityServer",
+      "RelativePath": "js/qrcode.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\qrcode.min.js"
+    },
+    {
+      "Identity": "D:\\Development\\SecurityRelated\\IDP\\src\\IdentityServer\\wwwroot\\js\\qrcodehelper.js",
+      "SourceId": "IdentityServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Development\\SecurityRelated\\IDP\\src\\IdentityServer\\wwwroot\\",
+      "BasePath": "_content/IdentityServer",
+      "RelativePath": "js/qrcodehelper.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\qrcodehelper.js"
     },
     {
       "Identity": "D:\\Development\\SecurityRelated\\IDP\\src\\IdentityServer\\wwwroot\\js\\signin-redirect.js",

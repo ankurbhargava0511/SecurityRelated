@@ -113,6 +113,34 @@ namespace IdentityServerHost.Quickstart.UI
                 if (_users.ValidateCredentials(model.Username, model.Password))
                 {
                     var user = _users.FindByUsername(model.Username);
+
+                    // validate the second factor 
+                    // first, get the totp secret for this user 
+                    string userSecret = "BVRVQJIUGTGNZVKO";
+                    if (userSecret == null)
+                    {
+                        ModelState.AddModelError("usersecret",
+                            "No second factor secret has been registered - " +
+                            "please contact the helpdesk.");
+                        return Redirect(model.ReturnUrl);
+                     
+                    }
+
+                    // validate the inputted totp 
+                    var authenticator = new TwoStepsAuthenticator
+                        .TimeAuthenticator();
+                    if (!authenticator.CheckCode(userSecret,
+                        model.Totp, user))
+                    {
+
+                        //await _events.RaiseAsync(new UserLoginFailureEvent(model.Username, "invalid OTP", clientId: context?.Client.ClientId));
+                        ModelState.AddModelError("totp", "TOTP is invalid.");
+                        var vm1 = await BuildLoginViewModelAsync(model);
+                        return View(vm1);
+                    }
+
+
+
                     await _events.RaiseAsync(new UserLoginSuccessEvent(user.Username, user.SubjectId, user.Username, clientId: context?.Client.ClientId));
 
                     // only set explicit expiration here if user chooses "remember me". 
