@@ -1,3 +1,5 @@
+using Duende.IdentityServer;
+using Microsoft.IdentityModel.Tokens;
 using Serilog;
 
 namespace IdentityServer;
@@ -18,6 +20,9 @@ internal static class HostingExtensions
             .AddInMemoryApiScopes(Config.ApiScopes)
             .AddInMemoryClients(Config.Clients)
         .AddTestUsers(TestUsers.Users);
+
+    
+   
 
         return builder.Build();
     }

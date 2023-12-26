@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Development\SecurityRelated\IDP\src\WebClient
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Development/SecurityRelated/IDP/src/WebClient/Pages/CallApi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsbEFwaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Development/SecurityRelated/IDP/src/WebClient/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
