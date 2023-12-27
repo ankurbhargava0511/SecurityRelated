@@ -9,7 +9,7 @@ builder.Services.AddAuthentication("Bearer")
     .AddJwtBearer("Bearer", options =>
     {
         options.Authority = "https://localhost:5001";
-
+        //options.Audience = api1 // this is api resource is eveluated not api scope
         options.TokenValidationParameters = new TokenValidationParameters
         {
             ValidateAudience = false

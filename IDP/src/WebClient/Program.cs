@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using System.IdentityModel.Tokens.Jwt;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,17 +11,21 @@ builder.Services.AddRazorPages();
 
 builder.Services.AddAuthentication(options =>
 {
-    options.DefaultScheme = "Cookies";
-    options.DefaultChallengeScheme = "oidc";
+    options.DefaultScheme ="Cookies";
+    options.DefaultChallengeScheme =  "oidc";
 })
     .AddCookie("Cookies")
     .AddOpenIdConnect("oidc", options =>
     {
+        options.SignInScheme = "Cookies";
         options.Authority = "https://localhost:5001";
 
         options.ClientId = "web";
         options.ClientSecret = "secret";
         options.ResponseType = "code";
+        // signoutCallbackpath  => default
+        // this is a dictanary to map old microsoft claim system for backwordcompatibilityt
+       // JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
         options.Scope.Clear();
         options.Scope.Add("openid");
@@ -29,6 +35,9 @@ builder.Services.AddAuthentication(options =>
         options.GetClaimsFromUserInfoEndpoint = true;
         options.Scope.Add("verification");
         options.ClaimActions.MapJsonKey("email_verified", "email_verified");
+
+       //options.GetClaimsFromUserInfoEndpoint = true;
+
         options.SaveTokens = true;
     })
     ;

@@ -1,6 +1,7 @@
 ﻿using Duende.IdentityServer;
 using Duende.IdentityServer.Models;
 using IdentityModel;
+using System.Net;
 
 namespace IdentityServer;
 
@@ -19,8 +20,13 @@ public static class Config
               JwtClaimTypes.Email,
               JwtClaimTypes.EmailVerified
           }
-      }
+      },
+        new IdentityResource("roles", "Your role(s)", new [] {"role"})
         };
+
+    // we can also add api here , once done add it to hosting
+    public static IEnumerable<ApiResource> ApiResources =>
+        new ApiResource[] { };
 
     public static IEnumerable<ApiScope> ApiScopes =>
     new List<ApiScope>
@@ -62,6 +68,34 @@ public static class Config
                 IdentityServerConstants.StandardScopes.Profile,
                 "verification",
                 "api1"
+            }
+        },
+         // interactive ASP.NET Core Web App Role Base
+        new Client
+        {
+            ClientId = "webRolebase",
+            ClientSecrets = { new Secret("secret".Sha256()) },
+
+            AllowedGrantTypes = GrantTypes.Code,
+            //AccessTokenLifetime =
+            //AuthorizationCodeLifetime =
+            //IdentityTokenLifetime
+
+            // where to redirect to after login
+            RedirectUris = { "https://localhost:8002/signin-oidc" },
+
+            // where to redirect to after logout
+            PostLogoutRedirectUris = { "https://localhost:8002/signout-callback-oidc" },
+
+            AllowOfflineAccess = true,
+            UpdateAccessTokenClaimsOnRefresh = true,
+            AllowedScopes = new List<string>
+            {
+                IdentityServerConstants.StandardScopes.OpenId,
+                IdentityServerConstants.StandardScopes.Profile,
+                "verification",
+                "api1",
+                "roles"
             }
         },
         // JavaScript BFF client
